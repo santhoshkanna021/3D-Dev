@@ -5,15 +5,14 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const About = () => {
-  const text = `Passionate about clean architecture
-    I build scalable, high-performance solutions
-    from prototype to production`;
-  const aboutText = `Obsessed with building fast, intuitive apps—from pixel-perfect React UIs to bulletproof serverless backends. Every line of code is a promise: quality that users feel.
-  When I’m not shipping:
-⚡️ Open-sourcing my latest experiment (or hacking on yours)
-🎥 Teaching devs on Twitch/YouTube—because rising tides lift all ships
-🧗 Rock climbing (problem-solving with real stakes)
-🎸 Strumming chords while CI pipelines pass (multitasking at its finest)`;
+  const text = `Turning ideas into powerful MERN Stack applications and actionable data insights — built to scale with purpose.`;
+  const aboutText = `I love crafting sleek, high-performance apps — from pixel-perfect React interfaces to robust MERN backends powered by data.
+
+Off the clock, you’ll find me:
+⚡ Experimenting with new stacks
+📊 Visualizing data stories
+💡 Contributing to open-source projects
+🎧 Coding to my favorite tracks`;
   const imgRef = useRef(null);
   useGSAP(() => {
     gsap.to("#about", {
@@ -41,7 +40,7 @@ const About = () => {
   return (
     <section id="about" className="min-h-screen bg-black rounded-b-4xl">
       <AnimatedHeaderSection
-        subTitle={"Cod with purpose, Built to scale"}
+        subTitle={"Build with purpose, Scale with intelligence"}
         title={"About"}
         text={text}
         textColor={"text-white"}
